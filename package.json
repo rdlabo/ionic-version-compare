@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
     "build": "npm run build1 && npm run build2 && npm run build3",
-    "build1": "cd packages/ion4-ng8 && npx ng build --prod",
-    "build2": "cd packages/ion5-ng8 && npx ng build --prod",
-    "build3": "cd packages/ion5-ng9_Ivy && npx ng build --prod",
+    "build1": "cd packages/ion4-ng8 && npx ng build --base-href=/ion4-ng8/ --prod",
+    "build2": "cd packages/ion5-ng8 && npx ng build --base-href=/ion5-ng8/ --prod",
+    "build3": "cd packages/ion5-ng9_Ivy && npx ng build --base-href=/ion5-ng9_Ivy/ --prod",
     "publish": "cp -r -f packages/ion4-ng8/www www/ion4-ng8 && cp -r -f packages/ion5-ng8/www www/ion5-ng8 && cp -r -f packages/ion5-ng9_Ivy/www www/ion5-ng9_Ivy"
   },
   "devDependencies": {},
