@@ -9,7 +9,8 @@
     "build": "npm run build1 && npm run build2 && npm run build3",
     "build1": "cd packages/ion4-ng8 && ionic build --prod",
     "build2": "cd packages/ion5-ng8 && ionic build --prod",
-    "build3": "cd packages/ion5-ng9_Ivy && ionic build --prod"
+    "build3": "cd packages/ion5-ng9_Ivy && ionic build --prod",
+    "publish": "mkdir www && cp -r -f packages/ion4-ng8/www www/ion4-ng8 && cp -r -f packages/ion5-ng8/www www/ion5-ng8 && cp -r -f packages/ion5-ng9_Ivy/www www/ion5-ng9_Ivy"
   },
   "devDependencies": {},
   "dependencies": {
